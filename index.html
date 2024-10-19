@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <input id="nav-menu" type="checkbox" name="nav-menu" class="nav-menu">
+    <label id="nav-menu-label" for="nav-menu" class="nav-menu-label"></label>
+    
+    <nav id="navbar">
+
+        <header id="navbar-header">Python Docs</header>
+
+        <ul class="nav-link-list">
+            <li class="nav-li">
+                <a href="#intro-to-python-section" class="nav-link">Introduction to Python</a>
+            </li>
+            <li class="nav-li">
+                <a href="#variable-data-types-section" class="nav-link">Variables and Data Types</a>
+            </li>
+            <li class="nav-li">
+                <a href="#input-output-section" class="nav-link">Basic Input and Output</a>
+            </li>
+            <li class="nav-li">
+                <a href="#control-flow-section" class="nav-link">Control Flow</a>
+            </li>
+            <li class="nav-li">
+                <a href="#function-section" class="nav-link">Functions</a>
+            </li>
+            <li class="nav-li">
+                <a href="#list-section" class="nav-link">Lists</a>
+            </li>
+            <li class="nav-li">
+                <a href="#footer" class="nav-link">Resources</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="main">
+
+        <article class="doc-section" id="intro-to-python-section">
+
+            <h1 class="section-header">Introduction to Python</h1>
+            <h2 class="section-subtitle">What is Python?</h2>
+            <p class="doc-paragraph">Python is a high-level, interpreted programming language known for its readability and simplicity. 
+                It supports multiple programming paradigms and is widely used for web development, data science, automation, and more.
+            </p>
+
+        </article>
+
+        <article class="doc-section" id="variable-data-types-section">
+
+            <h1 class="section-header">Variables & Data Types</h1>
+            <h2 class="section-subtitle">Variables</h2>
+            <p class="doc-paragraph">In Python, you don't need to declare a variable's type. Just assign a value to it.</p>
+
+            <h2 class="section-subtitle">Examples:</h2>
+            <pre><code>
+    x = 10  # Integer
+    name = "John"  # String
+    pi = 3.14  # Float
+            </code></pre>
+
+            <h2 class="section-subtitle">Common Data Types</h2>
+            <ul class="data-type-list">
+                <li><code>int</code>: Integer numbers (e.g., 5, 100, -45)</li>
+                <li><code>float</code>: Decimal numbers (e.g., 3.14, -0.001)</li>
+                <li><code>str</code>: Strings (e.g., "Hello", "Python")</li>
+                <li><code>bool</code>: Boolean values (<code>True</code> or <code>False</code>)</li>
+            </ul>
+
+        </article>
+        
+        <article class="doc-section" id="input-output-section">
+
+            <h1 class="section-header">Basic Input and Output</h1>
+            <h2 class="section-subtitle">Printing to the Console</h2>
+            <p class="doc-paragraph">Use the <code>print()</code> function to display output in Python.</p>
+
+            <h2 class="section-subtitle">Example:</h2>
+            <pre><code>print("Hello, world!")</code></pre>
+
+        </article>
+
+        <article class="doc-section" id="control-flow-section">
+
+            <h1 class="section-header">Control Flow</h1>
+            <h2 class="section-subtitle">If Statements</h2>
+            <p class="doc-paragraph">Conditional statements allow you to execute code based on conditions.</p>
+
+            <h2 class="section-subtitle">Example:</h2>
+            <pre><code>
+    age = 18
+    if age >= 18:
+        print("You are an adult.")
+    else:
+        print("You are a minor.")
+            </code></pre>
+
+        </article>
+
+        <article class="doc-section" id="function-section">
+
+            <h1 class="section-header">Functions</h1>
+            <h2 class="section-subtitle">Defining a Function</h2>
+            <p class="doc-paragraph">Functions allow you to group code that performs a specific task.</p>
+
+            <h2 class="section-subtitle">Example:</h2>
+            <pre><code>
+    def greet(name):
+    print("Hello, " + name)
+                
+    greet("Alice")
+            </code></pre>
+
+        </article>
+
+        <article class="doc-section" id="list-section">
+
+            <h1 class="section-header">Lists</h1>
+            <h2 class="section-subtitle">Creating a List</h2>
+            <p class="doc-paragraph">Lists in Python can store multiple items in a single variable.</p>
+
+            <h2 class="section-subtitle">Example:</h2>
+            <pre><code>
+    fruits = ["apple", "banana", "cherry"]
+    print(fruits[0])  # Output: apple
+            </code></pre>
+
+            <h2 class="section-subtitle">Other List Operations:</h2>
+            <ul class="operations-list">
+                <li><code>append()</code>: Add an element to the end of the list</li>
+                <li><code>remove()</code>: Remove a specific element from the list</li>
+                <li><code>sort()</code>: Sort the elements of the list in ascending order</li>
+                <li><code>pop()</code>: Remove the last element of the list</li>
+                <li><code>len()</code>: Return the length (number of elements) of the list</li>
+            </ul>
+
+        </article>
+
+    </main>
+
+    <footer id="footer">
+
+        <section class="footer-sections">
+
+            <section class="footer-section">
+                <h2 class="section-subtitle footer-subtitle">Python Docs</h2>
+                <a target="_blank" href="https://wiki.python.org/moin/BeginnersGuide" class="footer-link">Beginner's Guide</a>
+                <a target="_blank" href="https://docs.python.org/3/" class="footer-link">Official Python Docs</a>
+                <a target="_blank" href="https://www.w3schools.com/python/python_reference.asp" class="footer-link">W3Schools Reference</a>
+            </section>
+
+            <section class="footer-section">
+                <h2 class="section-subtitle footer-subtitle">Python Games</h2>
+                <a target="_blank" href="https://codecombat.com/" class="footer-link">Code Combat</a>
+                <a target="_blank" href="https://www.codingame.com/start/" class="footer-link">Coding Game</a>
+                <a target="_blank" href="https://itgenio.net/blog/python-coding-games" class="footer-link">Itgenio</a>
+            </section>
+
+            <section class="footer-section">
+                <h2 class="section-subtitle footer-subtitle">Python Libraries</h2>
+                <a target="_blank" href="https://numpy.org/doc/" class="footer-link">NumPy</a>
+                <a target="_blank" href="https://pandas.pydata.org/" class="footer-link">Pandas</a>
+                <a target="_blank" href="https://www.pygame.org/docs/" class="footer-link">Pygame</a>
+            </section>
+
+        </section>
+
+        <p id="copyright">&copy 2024 Gavin Hensley. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
